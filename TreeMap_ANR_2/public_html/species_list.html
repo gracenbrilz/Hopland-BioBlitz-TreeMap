@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+
+  <title>BioBlitz iNaturalist Tool</title>
+
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="static/css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="static/css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  
+<!-- Custom styles for this template -->
+    <link rel="stylesheet" type="text/css" href="static/css/bioblitz.css">
+
+</head>
+
+<body>
+<nav id="headerr" role="navigation">
+    <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo"><img height="60px" src="/files/Hoplandlogo.png"></a>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="https://www.inaturalist.org/projects/hopland-research-extension-center" target='_blank'>iNaturalist</a></li>
+        <li><a href="http://www.hoplandbioblitz.org/" target='_blank'>BioBlitz Photo Contest</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="section no-pad-bot" id="index-banner">
+    <div class="container">
+       <div class="row center">
+         <a class="waves-effect waves-light btn amber" href="/fullScreen.html" >Full-Screen Version</a>
+       </div>
+
+    <div class="row">
+        <h1 class = "title">Species List from the Hopland BioBlitz</h1>
+        <h5>This tool collects and displays the live data (updated every 15 minutes)</h5>
+    </div>
+
+
+<div class="row">
+      
+
+<ul class="collapsible" data-collapsible="expandable">
+  <li>
+
+    <h2 class= "mainHead">Animals</h2>
+    <p>(click each to expand)</p>
+
+    <div class="collapsible-header hheader"><h4 class= "sec"><i class="material-icons">toc</i>Insects</h4></div>
+    <div class="collapsible-body">
+
+        <h4 class= "third">Beetles</h4>
+        <ul class="lisst" id="coleo"></ul>
+
+        <h4 class= "third">Flies</h4>
+        <ul class="lisst" id="dipter"></ul>
+
+        <h4 class= "third">True Bugs</h4>
+        <ul class="lisst" id="hemi"></ul>
+
+        <h4 class= "third">Ants, Bees, &amp; Wasps</h4>
+        <ul class="lisst" id="hymenopt"></ul>
+
+        <h4 class= "third">Moths &amp; Butterflies</h4>
+        <ul class="lisst" id="leps"></ul>
+
+        <h4 class= "third">Dragonflies &amp; Mayflies</h4>
+        <ul class="lisst" id="odon"></ul>
+
+        <h4 class= "third">Crickets &amp; Grasshoppers</h4>
+        <ul class="lisst" id="othro"></ul>
+
+        <h4 class= "third">All Other Insects (and obeservations identified to order)</h4>
+        <ul class="lisst" id="otherIns"></ul>
+    </div>
+    </li>
+
+<ul class="collapsible" data-collapsible="expandable">
+  <li>
+    <div class="collapsible-header hheader"><h4 class= "sec"><i class="material-icons">toc</i>Arachnids &amp; Other Arthropods</h4></div>
+    <div class="collapsible-body">
+
+        <h4 class= "third">Mites &amp; Ticks</h4>
+        <ul class="lisst" id="acari"></ul>
+     
+        <h4 class= "third">Spiders</h4>
+        <ul class="lisst" id="spiders"></ul>
+
+        <h4 class= "third">Other Arachnids</h4>
+        <ul class="lisst" id="otherArach"></ul>
+
+        <h4 class= "third">All Other Arthropods</h4>
+        <ul class="lisst" id="otherArthro"></ul>
+    </div>
+    </li>
+
+  
+<ul class="collapsible" data-collapsible="expandable">
+  <li>
+    <div class="collapsible-header hheader"><h4 class= "sec"><i class="material-icons">toc</i>Birds</h4></div>
+    <div class="collapsible-body">
+
+<!-- Ducks, Geese & relatives -->
+        <h4 class= "third">Ducks, Geese &amp; relatives</h4>
+        <ul class="lisst" id="ducks"></ul>
+<!-- Falcons, Eagles & Buzzards -->
+        <h4 class= "third">alcons, Eagles, &amp; Buzzards</h4>
+        <ul class="lisst" id="falcons"></ul>
+<!-- Fowl & Quail   -->
+        <h4 class= "third">Fowl &amp; Quail</h4>
+        <ul class="lisst" id="fowl"></ul>
+<!-- Perching Birds -->
+        <h4 class= "third">Perching Birds</h4>
+        <ul class="lisst" id="perch"></ul>
+<!-- Owls -->
+        <h4 class= "third">Owls</h4>
+        <ul class="lisst" id="owls"></ul>
+<!-- Other Birds -->
+        <h4 class= "third">Other Birds</h4>
+        <ul class="lisst" id="otherBirds"></ul>
+
+
+      </div>
+    </li>
+
+
+<ul class="collapsible" data-collapsible="expandable">
+  <li>
+    <div class="collapsible-header hheader" hheader><h4 class= "sec"><i class="material-icons">toc</i>Mammals</h4></div>
+    <div class="collapsible-body">
+<!-- Pigs & Deer   -->
+        <h4 class= "third">Pigs &amp; Deer</h4>
+        <ul class="lisst" id="pigsDeer"></ul>
+
+<!-- Bats -->
+        <h4 class= "third">Bats</h4>
+        <ul class="lisst" id="bats"></ul>
+
+<!-- Rabbits, & Hares -->
+        <h4 class= "third">Rabbits &amp; Hares</h4>
+        <ul class="lisst" id="rabbit"></ul>
+
+<!-- Rodents -->
+        <h4 class= "third">Rodents</h4>
+        <ul class="lisst" id="rodents"></ul>
+
+<!-- Other Mammals -->
+        <h4 class= "third">All Other Mammals</h4>
+        <ul class="lisst" id="otherMam"></ul>
+
+
+      </div>
+    </li>
+
+
+<ul class="collapsible" data-collapsible="expandable">
+  <li>
+    <div class="collapsible-header hheader"><h4 class= "sec"><i class="material-icons">toc</i>Reptiles</h4></div>
+    <div class="collapsible-body">
+<!-- Lizards   -->
+        <h4 class= "third">Lizards</h4>
+        <ul class="lisst" id="lizards"></ul>
+
+<!-- Snakes -->
+        <h4 class= "third">Snakes</h4>
+        <ul class="lisst" id="snakes"></ul>
+
+<!-- Turtles & Tortoises -->
+        <h4 class= "third">Turtles &amp; Tortoises</h4>
+        <ul class="lisst" id="turt"></ul>
+
+<!-- Other Reptiles -->
+        <h4 class= "third">All Other Reptiles</h4>
+        <ul class="lisst" id="otherRep"></ul>
+
+
+      </div>
+    </li>
+
+<ul class="collapsible" data-collapsible="expandable">
+  <li>
+    <div class="collapsible-header hheader"><h4 class= "sec"><i class="material-icons">toc</i>Amphibians</h4></div>
+    <div class="collapsible-body">
+<!-- Frogs & Toads   -->
+        <h4 class= "third">Frogs &amp; Toads</h4>
+        <ul class="lisst" id="frogs"></ul>
+
+<!-- Salamanders -->
+        <h4 class= "third">Salamanders</h4>
+        <ul class="lisst" id="sals"></ul>
+
+<!-- Other Amphibians -->
+        <h4 class= "third">All Other Amphibians</h4>
+        <ul class="lisst" id="otherAmp"></ul>
+
+
+      </div>
+    </li>
+
+    <h2 class= "mainHead">Plants</h2>
+    <p>(click each to expand)</p>
+
+    <ul class="collapsible" data-collapsible="expandable">
+  <li>
+    <div class="collapsible-header hheader"><h4 class= "sec"><i class="material-icons">toc</i>Vascular Plants</h4></div>
+    <div class="collapsible-body">
+<!-- Ferns & Horsetails   -->
+        <h4 class= "third">Ferns &amp; Horsetails</h4>
+        <ul class="lisst" id="ferns"></ul>
+
+<!-- Conifers -->
+        <h4 class= "third">Conifers</h4>
+        <ul class="lisst" id="conifers"></ul>
+
+<!-- Coontails -->
+        <h4 class= "third">Coontails</h4>
+        <ul class="lisst" id="coontails"></ul>
+
+<!-- Grasses & related flowering plants -->
+        <h4 class= "third">Grasses &amp; related flowering plants</h4>
+        <ul class="lisst" id="grass"></ul>
+
+<!-- Other vascular plants -->
+        <h4 class= "third">All Other vascular plants</h4>
+        <ul class="lisst" id="otherVas"></ul>
+      </div>
+    </li>
+
+  <li>
+    <div class="collapsible-header hheader"><h4 class= "sec"><i class="material-icons">toc</i>Non-Vascular Plants</h4></div>
+    <div class="collapsible-body">
+<!-- Mosses, Hornworts & Liverworts   -->
+        <h4 class= "third">Mosses, Hornworts &amp; Liverworts</h4>
+        <ul class="lisst" id="moss"></ul>
+
+<!-- Algae -->
+        <h4 class= "third">Algae</h4>
+        <ul class="lisst" id="algae"></ul>
+    </li>
+
+    <li>
+    <div class="collapsible-header hheader"><h4 class= "sec"><i class="material-icons">toc</i>All Other Plants</h4></div>
+    <div class="collapsible-body">
+<!-- All other plants   -->
+        <ul class="lisst" id="otherPlants"></ul>
+
+
+      </div>
+        
+    <div class="row center">
+        <div class="col s12 m12 l4">
+          <h5 class="feature">Check out the </br><a href="https://www.inaturalist.org/projects/hopland-research-extension-center" target='_blank'>iNaturalist Hopland Page</a></h5>
+        </div>
+
+        <div class="col s12 m12 l4">
+          <h5 class="feature">Participate in the </br><a href="http://www.hoplandbioblitz.org/" target='_blank'>BioBlitz Photo Contest</a></h5>
+        </div>
+
+        <div class="col s12 m12 l4">
+          <h5 class="feature">Connect with the </br><a href="https://www.facebook.com/HoplandREC/?fref=ts" target='_blank'>Hopland REC Facebook</a></h5>
+        </div>
+
+    </div>
+
+<div class= "row center">
+  <img class= "logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/The_University_of_California_Berkeley_1868.svg/200px-The_University_of_California_Berkeley_1868.svg.png"></img>
+
+</div>
+  </div>
+</div>
+
+  <footer class="page-footer blue-grey darken-4">
+    <div class="container">
+      <div id="footer_text">This bioblitz is supported by a grant from the <a href="http://ucanr.edu/sites/anrstaff/Divisionwide_Programs/2013_ANR_competitive_grants_program/">University of California Agriculture and Natural Resources</a> to K. Will, M. Kelly, G. Roderick, and R. Gillespie (UCB ESPM).
+      <div class="footer-copyright">
+        </div>
+       </div>
+
+    </div>
+  </footer>
+
+      <!--Import jQuery before materialize.js-->
+      <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+      <script type="text/javascript" src="js/materialize.min.js"></script>
+<script type="text/javascript" src=/js/species_list.js></script>
+<script type="text/javascript" src=/js/materialize.js></script>
+<script type="text/javascript">
+  $(document).ready(function(){
+    $('.collapsible').collapsible({
+      accordion : false // A setting that changes the collapsible behavior to expandable instead of the default accordion style
+    });
+  });
+
+</script>
+
+</body>
+</html>

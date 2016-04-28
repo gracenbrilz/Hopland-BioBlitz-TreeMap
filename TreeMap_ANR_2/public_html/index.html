@@ -1,0 +1,104 @@
+
+
+<!DOCTYPE html>
+
+<html>
+<head>
+
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+
+  <title>BioBlitz iNaturalist Tool</title>
+
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="static/css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="static/css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link rel="icon" href="http://geodata.ucanr.edu/logos/flavicon.jpg" type="image/x-icon" />
+
+<!-- Custom styles for this template -->
+    <link rel="stylesheet" type="text/css" href="static/css/bioblitz.css">
+</head>
+
+<body>
+<nav id="headerr" role="navigation">
+    <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo"><img height="60px" src="http://geodata.ucanr.edu/logos/Hoplandlogo.png"></a>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="https://www.inaturalist.org/projects/hopland-research-extension-center" target='_blank'>iNaturalist</a></li>
+        <li><a href="http://www.hoplandbioblitz.org/" target='_blank'>BioBlitz Photo Contest</a></li>
+      </ul>
+    </div>
+  </nav>
+
+
+  <div class="section no-pad-bot" id="index-banner">
+    <div class="container">
+       <div class="row center">
+         <a class="waves-effect waves-light btn amber" href="/fullScreen.html" >Full-Screen Version</a>
+       </div>
+      <br><br>
+    <div class="row">
+        <h1 class = "title">Live Data from the Hopland BioBlitz</h1>
+        <h5>How to use the tool: Click on any cell to see next level of detail. Click on the top label to zoom out.</h5>
+        <h5>Need help? <a href="howto.html">See how to use the tool</a></h5>
+    </div>
+  <div class="row center">
+    <div id="chart"></div>
+  </div>
+    </div>
+         <div class="row center">
+         <a class="waves-effect waves-light btn  indigo darken-4" href="/species_list.html" >Species List</a>
+       </div>
+
+<div class="row">
+        <h5 class="header col s12 title">The Hopland BioBlitz recorded through iNaturalist</h5>
+        <p class="header col s12 light">This tree map shows the number of specimens recorded during the Hopland BioBlitz -- a weekend event where scientists and researchers find, identify and voucher (as appropriate) as many plant and animal species as possible at the Hopland Research and Extension Center. The Hopland Research and Extension Center is a beautiful 5,300-acre site with oak woodlands, rangeland, grassland, chaparral, riparian environments and pockets of mixed conifer forests. Specimens are recorded using <a href="https://www.inaturalist.org/projects/hopland-research-extension-center" target='_blank'>iNaturalist</a>, and this tool collects and displays the live data (updated every 15 minutes)! </p>
+      </div>
+
+    <div class="row center">
+        <div class="col s12 m12 l4">
+          <h5 class="feature">Check out the </br><a href="https://www.inaturalist.org/projects/hopland-research-extension-center" target='_blank'>iNaturalist Hopland Page</a></h5>
+        </div>
+
+        <div class="col s12 m12 l4">
+          <h5 class="feature">Participate in the </br><a href="http://www.hoplandbioblitz.org/" target='_blank'>BioBlitz Photo Contest</a></h5>
+        </div>
+
+        <div class="col s12 m12 l4">
+          <h5 class="feature">Connect with the </br><a href="https://www.facebook.com/HoplandREC/?fref=ts" target='_blank'>Hopland REC Facebook</a></h5>
+        </div>
+
+    </div>
+
+<div class= "row center">
+  <img class= "logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/The_University_of_California_Berkeley_1868.svg/200px-The_University_of_California_Berkeley_1868.svg.png"></img>
+
+</div>
+  </div>
+</div>
+
+  <footer class="page-footer blue-grey darken-4">
+    <div class="container">
+      <div id="footer_text">This bioblitz is supported by a grant from the <a href="http://ucanr.edu/sites/anrstaff/Divisionwide_Programs/2013_ANR_competitive_grants_program/">University of California Agriculture and Natural Resources</a> to K. Will, M. Kelly, G. Roderick, and R. Gillespie (UCB ESPM).
+      <div class="footer-copyright">
+        </div>
+       </div>
+
+    </div>
+  </footer>
+
+
+<script src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
+<script src="http://d3js.org/d3.v3.min.js"></script>
+<script src="/js/treeMap.js"></script>
+<script src="http://www.jacklmoore.com/colorbox/jquery.colorbox.js"></script>
+// <script type="text/javascript">
+// function openColorBox(){
+//         $.colorbox({iframe:true, width:"50%", height:"50%", href: "http://www.sitepoint.com"});
+//       }
+
+//       setTimeout(openColorBox, 0);
+// </script>
+</body>
+</html>
